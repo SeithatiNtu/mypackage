@@ -7,7 +7,6 @@ def bubble_sort(items):
                 temp = items[i]
                 items[i] = items[i+1]
                 items[i+1] = temp
-    return items
 
 def merge_sort(items):
 
@@ -29,17 +28,4 @@ def merge_sort(items):
             i +=1
     itemsarr += x[i:]
     itemsarr += y[j:]
-    return itemsarr
-
-def quick_sort(items):
-    
-    '''Return array of items, sorted in ascending order'''
-    if not items:
-        return []
-    
-    pivots = [x for x in items if x == items[0]]
-    lesser = quick_sort([x for x in items if x < items[0]])
-    greater = quick_sort([x for x in items if x > items[0]])
-    itemsarr = pivots + lesser + greater
-    
     return itemsarr
