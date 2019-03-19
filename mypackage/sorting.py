@@ -1,13 +1,15 @@
 def bubble_sort(items):
 
     '''Return array of items, sorted in ascending order'''
+    
     for passnum in range(len(items)-1,0,-1):
         for i in range(passnum):
             if items[i] > items[i+1]:
                 temp = items[i]
                 items[i] = items[i+1]
                 items[i+1] = temp
-        return items
+    return items
+
 print(bubble_sort([2,4,5,15,42,28]))
 
 def merge_sort(items):
