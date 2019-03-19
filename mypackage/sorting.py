@@ -8,7 +8,6 @@ def bubble_sort(items):
                 items[i] = items[i+1]
                 items[i+1] = temp
     return items
-print(bubble_sort([2,55,15,12,22]))
 
 def merge_sort(items):
 
