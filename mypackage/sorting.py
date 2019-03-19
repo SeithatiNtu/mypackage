@@ -43,16 +43,3 @@ def quick_sort(items):
     itemsarr = pivots + lesser + greater
     
     return itemsarr
-
-def quick_sort(items):
-
-    '''Return array of items, sorted in ascending order'''
-    if not items:
-        return []
-
-    pivots = [x for x in items if x == items[0]]
-    lesser = quick_sort([x for x in items if x < items[0]])
-    greater = quick_sort([x for x in items if x > items[0]])
-    itemsarr = pivots + lesser + greater
-
-    return itemsarr
