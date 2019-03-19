@@ -7,7 +7,8 @@ def bubble_sort(items):
                 temp = items[i]
                 items[i] = items[i+1]
                 items[i+1] = temp
-    return items
+        return items
+print(bubble_sort([2,4,5,15,42,28]))
 
 def merge_sort(items):
 
